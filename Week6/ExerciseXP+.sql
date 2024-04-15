@@ -1,1 +1,1 @@
-SELECT first_name, last_name FROM students WHERE birth_date >= '01/01/2000';
+SELECT first_name, last_name, birth_date FROM students ORDER BY id ASC LIMIT 3 OFFSET 2 ;
