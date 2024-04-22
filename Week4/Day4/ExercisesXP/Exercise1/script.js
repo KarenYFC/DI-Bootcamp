@@ -22,4 +22,4 @@ sarahElement.remove();
 const secondListItems = document.querySelectorAll('.list:nth-child(2) li');
 
         for (const listItem of secondListItems) {
-            listItem.textContent = 'Karen';
+            listItem.textContent = 'Karen';}
