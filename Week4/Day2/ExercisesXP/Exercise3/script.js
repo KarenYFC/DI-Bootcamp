@@ -23,3 +23,27 @@ function isDivisible() {
 }
 
 isDivisible();
+
+//Bonus: Add a parameter divisor to the function.
+
+//isDivisible(divisor)
+
+//Example:
+//isDivisible(3) : Console.log all the numbers divisible by 3, and their sum
+//isDivisible(45) : Console.log all the numbers divisible by 45, and their sum
+
+function isDivisible(divisor) {
+    let totalSum = 0;
+    
+    for (let num = 0; num <= 500; num++) {
+        if (num % divisor === 0) {
+            console.log(num);
+            totalSum += num;
+        }
+    }
+    
+    console.log(`Sum of numbers divisible by ${divisor}: ${totalSum}`);
+}
+
+isDivisible(3);
+isDivisible(45);
